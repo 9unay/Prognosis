@@ -32,9 +32,8 @@ $(document).ready(function () {
             $("#myWeather").val("")
             console.log(data)
         }
+        myweather()
         
-
-
     })
 
 
