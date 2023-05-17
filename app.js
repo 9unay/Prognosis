@@ -6,7 +6,7 @@ $(document).ready(function () {
 
     $(document).on('keypress', function (e) {
         if (e.which == 13) {
-            let url = `     `
+            let url = `  http://maps.openweathermap.org/maps/2.0/weather/{op}/{z}/{x}/{y}?appid={API key}   `
             async function myweather (){
                 let responce = await fetch(url)
                 let data = await responce.json()
@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     $("#btn").click(function (e) {
         e.preventDefault()
-        let url = `   `
+        let url = ` http://maps.openweathermap.org/maps/2.0/weather/{op}/{z}/{x}/{y}?appid={API key}  `
         async function myweather() {
             let responce = await fetch(url)
             let data = await responce.json()
